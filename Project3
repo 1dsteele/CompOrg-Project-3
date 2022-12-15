@@ -219,3 +219,9 @@ j fixedEdgeCase
 sub_b:                                     # sub program sub_b starts to go through the string and find the addr of string removing spaces
 
 li $s0, 0                                  # flag which is true if first valid char has been encountered
+lw $s2, 0($sp)
+firstPass:
+lb $s4, 0($s2)                             # current char
+
+li $t1, 32                                 # if char is space or tab
+li $t2, 9
