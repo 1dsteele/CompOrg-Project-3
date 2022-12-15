@@ -40,3 +40,10 @@ syscall
 
 la $t0, input                               # calls the sub_a function
 addi $sp, $sp, -4
+sw $t0, 0($sp)
+jal sub_a
+addi $sp, $sp, 4
+
+j exit
+
+exit:                                       # exit
