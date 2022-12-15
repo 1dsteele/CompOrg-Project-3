@@ -113,3 +113,8 @@ addi $sp, $sp, -12                          # saves space for storing $s registe
 sw $s0, 0($sp)                              # saves the state of all s registers used in the stack
 sw $s1, 4($sp)
 sw $s6, 8($sp)
+addi $sp, $sp, -12                         # passes the addr of the substring to sub_b
+sw $s0, 0($sp)                             # saves safe of return values in the stack
+jal sub_b
+lw $s2, 4($sp)                             # saves the return value
+lw $s3, 8($sp)
