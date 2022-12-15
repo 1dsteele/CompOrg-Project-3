@@ -24,3 +24,5 @@
 #Input: 012 Output: 3/32
 #Input: 100,200 Output: 3/900,3/1800
 #Input: 1023 Output: 4/27063
+#Input: A12t,,12345,axyz,a   b,T00a  Output: 4/270989,?,?,?,?,4/783010
+#Input: a @ t Output: ?
