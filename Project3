@@ -370,3 +370,9 @@ li $t2, 1
 beq $t1, $t2 sub_b_loop                    # if current addr is greater than the address of null or enter char then loop
 
 addi $v0, $s3, 0                           # end of loop, add the decimal value to return register
+sw $v0, 4($sp)
+
+li $s0, 0                                  # resets registers $s0-$s6
+li $s1, 0
+li $s2, 0
+li $s3, 0
