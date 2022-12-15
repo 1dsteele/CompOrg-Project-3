@@ -132,3 +132,10 @@ addi $sp, $sp, 4                           # restore the stack to before saving 
 li $t1, -1                                 # if the function returns -1, then invalid
 beq $s2, $t1, printInvalid
 slti $t1, $s3, 1                           # if $s1 is less than 1 handle edge case
+li $t2, 1
+beq $t2, $t1 oneChar
+
+j fixedEdgeCase
+
+fixedEdgeCase:
+li $t0, 1                                  # first char encountered, print comma
