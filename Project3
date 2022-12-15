@@ -147,3 +147,10 @@ rebranch_4:
 
 addi $a0, $s3, 0                           # print the length
 li $v0, 1
+syscall
+
+li $v0, 11                                 #print backslash
+addi $a0, $zero, 47
+syscall
+
+addi $a0, $s2, 0                           # print the decimal number
