@@ -13,3 +13,8 @@
 #decimal integer corresponding to the base-N number represented by the substring. β
 #stands for the M-th lower case letter and Δ stands for the M-th upper case letter in the
 #English alphabet. In a base-N number, both 'a' and 'A' correspond to the decimal integer
+#of 10, both 'b' and 'B' to 11, and so on, and both β and Δ correspond to N – 1.
+#o If  there  are  multiple  substrings,  the  numbers  and  the  error  message  should  be
+#separated by a single comma.
+#Sample test cases (assuming the Howard ID is 12345678):
+#02821059 % 11 = 10, therefore the base is 26 + 10 = 36, β is 't' and Δ is 'T'
