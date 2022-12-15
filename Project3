@@ -376,3 +376,10 @@ li $s0, 0                                  # resets registers $s0-$s6
 li $s1, 0
 li $s2, 0
 li $s3, 0
+li $s4, 0
+li $s5, 0
+li $s6, 0
+
+jr $ra                                     # returns to main program
+
+invalidChar:
