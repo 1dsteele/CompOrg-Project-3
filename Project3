@@ -154,3 +154,11 @@ addi $a0, $zero, 47
 syscall
 
 addi $a0, $s2, 0                           # print the decimal number
+li $v0, 1
+syscall
+
+j rebranch_2
+
+printComma:
+
+li $v0, 11                                 #print comma
