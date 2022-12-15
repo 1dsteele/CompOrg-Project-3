@@ -383,3 +383,6 @@ li $s6, 0
 jr $ra                                     # returns to main program
 
 invalidChar:
+li $v0, -1
+sw $v0, 4($sp)
+jr $ra
