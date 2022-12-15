@@ -232,3 +232,10 @@ or $t1, $t3, $t4                           # $s4=SPACE or $s4=TAB
 li $t2, 1
 
 bne $t1, $t2 notSpace                      # if not space or tab go to notSpace
+
+j firstPassCOTD                            # if it is space or tab continue
+
+notSpace:
+li $t1, 1
+beq $s0, $t1, firstCharEncountered         # if the first non space non tab char encountered store the location and continue
+addi $s5, $s2, 0                           # save the address in $s5
