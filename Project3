@@ -8,3 +8,8 @@
 #If the substring has zero characters or more than 4 characters or has at least one illegal
 #character (a character outside the set described below), the program prints a question
 #mark "?" as an error message.
+#If the substring has only the characters from '0' to '9' and from 'a' to β and from 'A' to
+#Δ, the program prints out the number of digits and a slash ‘/’, followed by the unsigned
+#decimal integer corresponding to the base-N number represented by the substring. β
+#stands for the M-th lower case letter and Δ stands for the M-th upper case letter in the
+#English alphabet. In a base-N number, both 'a' and 'A' correspond to the decimal integer
