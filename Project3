@@ -139,3 +139,11 @@ j fixedEdgeCase
 
 fixedEdgeCase:
 li $t0, 1                                  # first char encountered, print comma
+beq $s6, $t0, printComma
+
+j rebranch_4
+
+rebranch_4:
+
+addi $a0, $s3, 0                           # print the length
+li $v0, 1
