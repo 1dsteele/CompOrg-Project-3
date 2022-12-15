@@ -326,3 +326,11 @@ slti $t1, $s4, 90                          # char < 90
 
 and $t0, $t0, $t1
 li $t1, 1
+beq $t0, $t1, Upper                        # if char >= 65 and char < 90
+
+j invalidChar
+
+Number:
+
+addi $t1, $s4, -48                         # convert ascii into number
+li $t2, 36                                 # sum = sum*N = 26 + (X % 11) + cur_number
