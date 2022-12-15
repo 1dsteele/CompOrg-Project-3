@@ -95,3 +95,12 @@ li $t0, 1
 beq $s1, $t0, printInvalidExit
 
 j rebranch_3
+
+rebranch_3:
+jr $ra
+
+firstCharTrue:
+
+li $s1, 0
+
+addi $sp, $sp, -4                           # saves space for return addr
