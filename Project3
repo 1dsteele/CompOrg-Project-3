@@ -334,3 +334,10 @@ Number:
 
 addi $t1, $s4, -48                         # convert ascii into number
 li $t2, 36                                 # sum = sum*N = 26 + (X % 11) + cur_number
+mult $t2, $s3
+mflo $s3
+add $s3, $s3, $t1
+
+j sub_b_loopCOTD
+
+Lower:
