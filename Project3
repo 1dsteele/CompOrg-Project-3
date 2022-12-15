@@ -187,3 +187,10 @@ j rebranch_2
 printInvalid:
 
 li $t0, 1                                  # print comma when first char encountered
+beq $s6, $t0, printCommaError
+j rebranch_5
+
+rebranch_5:
+
+li $v0, 11                                 # print question mark
+li $a0, 63
