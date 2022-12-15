@@ -299,3 +299,12 @@ lb $s4, 0($s0)                             # current char
 slti $t0, $s4, 48                          # char < 47
 
 nor $t0, $t0, $zero                        # not (char < 48)  ===> ( char >= 48)
+
+slti $t1, $s4, 58                          # char < 58
+
+and $t0, $t0, $t1
+li $t1, 1
+beq $t0, $t1, Number                       # if char >= 48 and char < 58
+
+                                           # character falls in the range  'a' to 'y'
+slti $t0, $s4, 97                          # char less than 97
