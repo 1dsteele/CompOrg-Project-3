@@ -246,3 +246,11 @@ j firstPassCOTD
 firstCharEncountered:
 addi $s6, $s2, 0                           # save the addr in $s5
 j firstPassCOTD
+
+firstPassCOTD:                             # set the register t2 to point at the next char
+
+addi $s2, 1
+
+lb $s4, 0($s2)                             # current chara
+li $t1, 0                                  # increment the counter
+li $t2, 10
