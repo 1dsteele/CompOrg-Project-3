@@ -211,3 +211,11 @@ syscall
 
 
 j rebranch_3
+
+oneChar:
+li $s3, 1
+j fixedEdgeCase
+
+sub_b:                                     # sub program sub_b starts to go through the string and find the addr of string removing spaces
+
+li $s0, 0                                  # flag which is true if first valid char has been encountered
