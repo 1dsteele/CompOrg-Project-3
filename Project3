@@ -55,3 +55,11 @@ sub_a:                                      # sub program sub_a starts
 
 lw $s0, 0($sp)                              # the addr of the string
 li $s1, 1                                   # flag encountered
+li $s6, 0                                   # flag encountered
+
+j sub_a_loop
+
+sub_a_loop:
+
+lb $t0, 0($s0)
+li $t1, 44
