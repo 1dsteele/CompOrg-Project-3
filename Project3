@@ -124,3 +124,11 @@ lw $s1, 4($sp)
 lw $s6, 8($sp)
 
 addi $sp, $sp, 12                          # restore the stack to before saving s registers
+
+lw $ra, 0($sp)                             # restore return addr to $ra
+
+addi $sp, $sp, 4                           # restore the stack to before saving return addr
+
+li $t1, -1                                 # if the function returns -1, then invalid
+beq $s2, $t1, printInvalid
+slti $t1, $s3, 1                           # if $s1 is less than 1 handle edge case
