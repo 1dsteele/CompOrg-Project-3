@@ -72,3 +72,11 @@ rebranch_1:
 li $t0, 1
 
 beq $s1, $t0, firstCharTrue                 # if first character true, branch out
+
+j rebranch_2
+
+rebranch_2:
+li $s6, 1
+addi $s0, $s0, 1
+
+li $t0, 0
