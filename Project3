@@ -26,3 +26,11 @@
 #Input: 1023 Output: 4/27063
 #Input: A12t,,12345,axyz,a   b,T00a  Output: 4/270989,?,?,?,?,4/783010
 #Input: a @ t Output: ?
+
+.data
+input: .space 1001
+.text
+
+main:                                       # main program starts
+
+li $v0, 8                                   # get input string from the user
