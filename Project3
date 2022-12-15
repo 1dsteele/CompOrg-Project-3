@@ -104,3 +104,12 @@ firstCharTrue:
 li $s1, 0
 
 addi $sp, $sp, -4                           # saves space for return addr
+
+sw $ra,  0($sp)                             # saves the return addr in the stack
+
+addi $sp, $sp, -12                          # saves space for storing $s registers
+
+
+sw $s0, 0($sp)                              # saves the state of all s registers used in the stack
+sw $s1, 4($sp)
+sw $s6, 8($sp)
