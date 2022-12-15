@@ -1,0 +1,5 @@
+#Assume your Howard ID as a decimal integer is X. Let N =26 + (X % 11) where % is the modulo operation, and M = N – 10.
+#You will write a MIPS program that reads a string of up to 1000 characters from user input.
+#With single comma as the delimiter, split the input string into multiple substrings (with the
+#comma removed). If there is no comma in the input, the whole input string is considered a
+#substring referred to below.
