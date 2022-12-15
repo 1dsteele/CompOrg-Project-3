@@ -283,3 +283,11 @@ addi $s0, $s5, 0                           # addr of the string start
 addi $s1, $s6, 0                           # addr of the string end
 
 li $s2, 0                                  # reset all unused registers
+li $s4, 0
+li $s5, 0
+li $s6, 0
+
+
+li $s3, 0                                  # sum of all numbers, initialize the second pass
+
+j sub_b_loop
