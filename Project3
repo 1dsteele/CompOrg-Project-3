@@ -170,3 +170,12 @@ j rebranch_4
 printCommaError:
 
 li $v0, 11                                 #print comma
+addi $a0, $zero, 44
+syscall
+
+
+j rebranch_5
+
+commaEncountered:
+
+li $t0, 1                                  # checks if previous element is a comma
