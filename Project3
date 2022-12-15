@@ -194,3 +194,11 @@ rebranch_5:
 
 li $v0, 11                                 # print question mark
 li $a0, 63
+syscall
+
+j rebranch_2
+
+printInvalidExit:
+
+li $v0, 11                                 # print comma
+addi $a0, $zero, 44
