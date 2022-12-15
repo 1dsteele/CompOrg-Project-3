@@ -308,3 +308,11 @@ beq $t0, $t1, Number                       # if char >= 48 and char < 58
 
                                            # character falls in the range  'a' to 'y'
 slti $t0, $s4, 97                          # char less than 97
+
+nor $t0, $t0, $zero                        # not (char < 97)  ===> ( char  >= 97)
+
+slti $t1, $s4, 122                         # char < 123
+
+and $t0, $t0, $t1
+li $t1, 1
+beq $t0, $t1, Lower                        # if char >= 97 and char < 123
