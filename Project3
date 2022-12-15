@@ -47,3 +47,11 @@ addi $sp, $sp, 4
 j exit
 
 exit:                                       # exit
+li $v0, 10
+syscall
+
+
+sub_a:                                      # sub program sub_a starts
+
+lw $s0, 0($sp)                              # the addr of the string
+li $s1, 1                                   # flag encountered
