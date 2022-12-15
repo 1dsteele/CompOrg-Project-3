@@ -63,3 +63,12 @@ sub_a_loop:
 
 lb $t0, 0($s0)
 li $t1, 44
+beq $t0, $t1, commaEncountered
+
+j rebranch_1
+
+rebranch_1:
+
+li $t0, 1
+
+beq $s1, $t0, firstCharTrue                 # if first character true, branch out
