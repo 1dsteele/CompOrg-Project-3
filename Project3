@@ -18,3 +18,9 @@
 #separated by a single comma.
 #Sample test cases (assuming the Howard ID is 12345678):
 #02821059 % 11 = 10, therefore the base is 26 + 10 = 36, β is 't' and Δ is 'T'
+
+#Input: 0, 1, 2 Output: 1/0,1/1,1/2
+#Input: A,B,C,D Output: 1/10,1/11,1/12,1/13
+#Input: 012 Output: 3/32
+#Input: 100,200 Output: 3/900,3/1800
+#Input: 1023 Output: 4/27063
