@@ -179,3 +179,11 @@ j rebranch_5
 commaEncountered:
 
 li $t0, 1                                  # checks if previous element is a comma
+beq $s1, $t0, printInvalid
+li $s1, 1
+
+j rebranch_2
+
+printInvalid:
+
+li $t0, 1                                  # print comma when first char encountered
