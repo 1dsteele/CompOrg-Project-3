@@ -34,3 +34,9 @@ input: .space 1001
 main:                                       # main program starts
 
 li $v0, 8                                   # get input string from the user
+la $a0, input
+li $a1, 1001
+syscall
+
+la $t0, input                               # calls the sub_a function
+addi $sp, $sp, -4
